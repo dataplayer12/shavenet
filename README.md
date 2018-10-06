@@ -15,6 +15,7 @@ Step 2. Train a fairly shallow ConvNet with `train.py`.
 
 Step 3. Test on your face with `test.py`.
 
+### Results
 Yes, it has been 6 days!
 
 ![alt text][train]
