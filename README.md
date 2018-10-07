@@ -8,7 +8,7 @@ I often skip shaving until I realize I look like a chimpanzee.
 This project was conceived to remind myself when to shave. Since there are no existing labelled datasets for male faces showing days since last shaved, I created a script which allows one to generate their own labelled data.
 
 ### Bro, did you just assume my gender?
-No, I didn't. I am not sexist or *beardist*. If you do not sport a beard, fear not! By making a few changes, mainly to data collection and test scripts, you can adapt ShaveNet to recognize emotions. You can save data with different emotions as labels and train your own emotion detector! If you happen to be Kristen Stewart, you can't be helped.
+No, I didn't. I am not sexist or *beardist*. If you do not sport a beard, fear not! By making a few changes, mainly to data collection and test scripts, you can adapt ShaveNet to recognize emotions. You can save data with different emotions as labels and train your own emotion detector! If you are Kristen Stewart and the ConvNet cannot detect your emotions, please raise an issue.
 
 ### Who is this for?
 The code in this repo is a good guide for a beginner to neural networks and tensorflow. The scripts are a good tutorial for an end to end machine learning project involving data *collection*, *augmentation*, low level *implementation* of a ConvNet in tensorflow with `tf.nn` API, evaluation of training with *tensorboard* and *evaluation* on a live camera feed.
@@ -37,6 +37,8 @@ Yes, it has been 6 days!
 
 ### Caution
 Most of the tensorflow syntax is very old (written for tf 1.1) and low-level. This is nowhere near an optimal architecture for solving the problem. The basic demonstration is complete, but this is still a work in progress.
+#### Missing dependency
+The scripts use a haar cascade object detector to detect faces. This requires a file called `haarcascade_frontalface_default.xml`, which can be found in your OpenCV installation. Since it is the intellectual property of Intel, I cannot provide it on this repo.
 
 ### Next steps
 Train a model to advise when to bathe.
