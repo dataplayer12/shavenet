@@ -7,10 +7,15 @@ import time
 
 try:
 	import cv2
-except:
+except ImportError:
 	import sys
 	sys.path.append('/usr/local/lib/python2.7/site-packages')
 	import cv2
+
+try:
+	raw_input          # Python 2
+except NameError:
+	raw_input = input  # Python 3
 
 while True:
 	try:
