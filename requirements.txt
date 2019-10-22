@@ -49,7 +49,7 @@ macholib==1.9
 Markdown==2.6.11
 MarkupSafe==1.0
 matplotlib==2.2.3
-mistune==0.7.4
+mistune==0.8.1
 mock==2.0.0
 modulegraph==0.16
 nbconvert==5.2.1
