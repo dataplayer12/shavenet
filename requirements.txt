@@ -181,7 +181,7 @@ testpath==0.3
 -e git+https://github.com/tf-coreml/tf-coreml.git@e6f44e3f96b8bbb245f3c2aaec947473b9be1f3c#egg=tfcoreml
 tornado==4.5.2
 traitlets==4.3.2
-urllib3==1.23
+urllib3==1.24.2
 wcwidth==0.1.7
 websocket-client==0.53.0
 Werkzeug==0.15.3
