@@ -163,7 +163,7 @@ PyVISA==1.9.0
 PyYAML==5.1
 pyzmq==16.0.2
 qtconsole==4.3.1
-requests==2.19.1
+requests==2.20.0
 scandir==1.5
 scikit-learn==0.19.0
 scipy==1.1.0
