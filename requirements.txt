@@ -12,7 +12,7 @@ bokeh==0.12.10
 certifi==2018.8.24
 chardet==3.0.4
 configparser==3.5.0
-coremltools==2.0
+coremltools==3.0
 cycler==0.10.0
 Cython==0.28.5
 decorator==4.1.2
@@ -21,7 +21,7 @@ entrypoints==0.2.3
 enum34==1.1.6
 et-xmlfile==1.0.1
 funcsigs==1.0.2
-functools32==3.2.3.post2
+functools32==3.2.3.post2; python_version < '3.0'
 future==0.16.0
 futures==3.1.1
 gast==0.2.0
@@ -57,7 +57,8 @@ nbformat==4.4.0
 notebook==5.7.8
 numpy==1.14.3
 olefile==0.44
-opencv-contrib-python==3.3.0.10
+opencv-contrib-python==3.3.0.10; python_version < '3.0'
+opencv-contrib-python==4.1.1.26; python_version >= '3.0'
 openpyxl==2.4.9
 pandocfilters==1.4.2
 pathlib2==2.3.0
@@ -70,7 +71,6 @@ protobuf==3.6.1
 ptyprocess==0.5.2
 py-applescript==1.0.1
 py2app==0.14
-PyAutoGUI==0.9.36
 Pygments==2.2.0
 PyMsgBox==1.0.6
 pyobjc==4.0
@@ -169,10 +169,10 @@ scikit-learn==0.19.0
 scipy==1.1.0
 simplegeneric==0.8.1
 singledispatch==3.4.0.3
-six==1.10.0
+six==1.12.0
 sklearn==0.0
 slackclient==1.3.0
-subprocess32==3.2.7
+subprocess32==3.2.7 ; python_version < '3.0'
 tensorboard==1.10.0
 tensorflow==1.10.1
 termcolor==1.1.0
@@ -186,3 +186,4 @@ wcwidth==0.1.7
 websocket-client==0.53.0
 Werkzeug==0.15.3
 widgetsnbextension==3.0.2
+PyAutoGUI==0.9.36  # must come after pyobjc-core and pyobjc
