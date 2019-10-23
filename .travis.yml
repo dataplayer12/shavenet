@@ -7,19 +7,20 @@ env:
   - PYTHON=python3.7  # v3.7.4
 matrix:
   allow_failures:
-    - PYTHON=python3.7
+    - env: PYTHON=python3.7
 install:
   - $PYTHON -m pip install flake8 pyobjc==4.0
   - $PYTHON -m pip install -r requirements.txt
 before_script:
   - flake8 --version
   # stop the build if there are Python syntax errors or undefined names
-  - flake8 . --count --select=E9,F63,F7 --show-source --statistics  # F82
+  - EXCLUDE=./.*,./src/tfcoreml/tfcoreml/_tf_coreml_converter.py
+  - flake8 . --count --exclude=$EXCLUDE --select=E9,F63,F7,F82 --show-source --statistics
   # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 script:
+  - mkdir ./data || true
   - $PYTHON --version
   - $PYTHON -m test.py
 notifications:
-  on_success: change
-  on_failure: change  # `always` will be the setting once code changes slow down
+  email: false
