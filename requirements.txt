@@ -15,6 +15,7 @@ configparser==3.5.0
 coremltools==3.0
 cycler==0.10.0
 Cython==0.28.5
+data_utils==0.0.7
 decorator==4.1.2
 EasyProcess==0.2.3
 entrypoints==0.2.3
