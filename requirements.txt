@@ -160,7 +160,7 @@ PyTweening==1.0.3
 pytz==2017.2
 pyusb==1.0.2
 PyVISA==1.9.0
-PyYAML==5.1
+PyYAML==5.4
 pyzmq==16.0.2
 qtconsole==4.3.1
 requests==2.20.0
