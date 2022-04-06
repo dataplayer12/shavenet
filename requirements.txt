@@ -54,7 +54,7 @@ mock==2.0.0
 modulegraph==0.16
 nbconvert==5.2.1
 nbformat==4.4.0
-notebook==5.7.8
+notebook==6.4.10
 numpy==1.14.3
 olefile==0.44
 opencv-contrib-python==3.3.0.10
