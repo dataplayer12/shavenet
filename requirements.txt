@@ -55,7 +55,7 @@ modulegraph==0.16
 nbconvert==5.2.1
 nbformat==4.4.0
 notebook==5.7.8
-numpy==1.14.3
+numpy==1.22.0
 olefile==0.44
 opencv-contrib-python==3.3.0.10
 openpyxl==2.4.9
